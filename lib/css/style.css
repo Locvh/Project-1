@@ -118,13 +118,8 @@ body.loading-page h1 .hero__title.in:before {
 }
 
 /**/
-.page-wrapper {
-    height: 100%;
-    position: relative;
-}
-.page-wrapper {
-        border-width: 0;
-}
+
+
 
 /*heading*/
 h1 {
@@ -158,6 +153,21 @@ h4 {
 }
 section {
     position: relative;
+}
+hr {
+    border-top-width: .1rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    position: relative;
+	opacity: .5;
+}
+
+hr.hr-white {
+    border-top-color: #fff;
+}
+
+mark, .mark {
+    background-color: #fff;
 }
 /*link*/
 
@@ -396,6 +406,20 @@ a.nav-link.active i {
   padding-bottom: 1.563rem;
 }
 
+ /*.navbar-b:after {
+    background-image: url(file:///C|/Users/Admin/Documents/b%C3%A0i%20t%E1%BA%ADp%20font-end/Project1/img/bg-skew-navbar.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    bottom: -100%;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+    z-index: -1;}*/
+	
 .navbar-b.navbar-reduce {
   box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
 }
@@ -788,15 +812,13 @@ a.nav-link.active i {
     height: 100%;
     z-index: -2;
     overflow: hidden;
+	
 }
 
 .background-wrapper .background {
     height: 100%;
     width: 100%;
-}
-
-.background-wrapper.skew-down, .background-wrapper.skew-up {
-    position: absolute;
+	
 }
 
 .background--image, .img-into-bg {
@@ -890,6 +912,10 @@ a.nav-link.active i {
 
 .owl-carousel .owl-item .img-into-bg img {
     display: none;
+}
+.page-wrapper {
+    height: 100%;
+    position: relative;
 }
 
 /*box*/
@@ -1037,7 +1063,6 @@ a.nav-link.active i {
     width: 0;
 }
 /*gallery*/
-
 .gallery {
     position: relative;
 }
@@ -1068,7 +1093,7 @@ a.nav-link.active i {
 }
 
 .gallery .gallery__caption h5 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     margin-bottom: .2rem;
     font-weight: bold;
     opacity: .8;
@@ -1190,5 +1215,153 @@ a.nav-link.active i {
 
 .person:hover .person__social {
     transform: translateY(calc(0% + 4rem));
+}
+
+
+/* Footer */
+
+#footer {
+    color: #fff;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+#footer a {
+    color: #fff;
+}
+
+#footer .background--particles {
+    margin: 0;
+}
+
+#footer input[type="text"], #footer input[type="email"],
+#footer input[type="date"], #footer input[type="time"],
+#footer input[type="search"], #footer input[type="password"],
+#footer input[type="number"], #footer input[type="tel"],
+#footer textarea.form-control {
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, .3);
+    color: #fff;
+    box-shadow: none;
+}
+
+#footer input[type="text"]:active, #footer input[type="text"]:focus,
+#footer input[type="text"]:hover, #footer input[type="email"]:active,
+#footer input[type="email"]:focus, #footer input[type="email"]:hover,
+#footer input[type="date"]:active, #footer input[type="date"]:focus,
+#footer input[type="date"]:hover, #footer input[type="time"]:active,
+#footer input[type="time"]:focus, #footer input[type="time"]:hover,
+#footer input[type="search"]:active, #footer input[type="search"]:focus,
+#footer input[type="search"]:hover, #footer input[type="password"]:active,
+#footer input[type="password"]:focus, #footer input[type="password"]:hover,
+#footer input[type="number"]:active, #footer input[type="number"]:focus,
+#footer input[type="number"]:hover, #footer input[type="tel"]:active,
+#footer input[type="tel"]:focus, #footer input[type="tel"]:hover,
+#footer textarea.form-control:active, #footer textarea.form-control:focus,
+#footer textarea.form-control:hover {
+    border-color: rgba(255, 255, 255, .8);
+}
+
+
+/*Input*/
+
+input[type="text"], input[type="email"], input[type="date"], input[type="time"],
+input[type="search"], input[type="password"], input[type="number"],
+input[type="tel"], textarea.form-control {
+    border: .2rem solid rgba(0, 0, 0, .15);
+    border-radius: .3rem;
+    color: #363636;
+    transition: .3s;
+    transform-style: preserve-3d;
+    -webkit-appearance: none;
+    background-color: #fff;
+    font-size: 1.4rem;
+    outline: none !important;
+    width: 100%;
+    height: inherit;
+    padding: 1.5rem;
+}
+
+input[type="text"]:active, input[type="text"]:focus, input[type="text"]:hover,
+input[type="email"]:active, input[type="email"]:focus, input[type="email"]:hover,
+input[type="date"]:active, input[type="date"]:focus, input[type="date"]:hover,
+input[type="time"]:active, input[type="time"]:focus, input[type="time"]:hover,
+input[type="search"]:active, input[type="search"]:focus,
+input[type="search"]:hover, input[type="password"]:active,
+input[type="password"]:focus, input[type="password"]:hover,
+input[type="number"]:active, input[type="number"]:focus,
+input[type="number"]:hover, input[type="tel"]:active, input[type="tel"]:focus,
+input[type="tel"]:hover, textarea.form-control:active,
+textarea.form-control:focus, textarea.form-control:hover {
+    border: .2rem solid rgba(0, 0, 0, .25);
+}
+
+input[type="text"].small, input[type="email"].small, input[type="date"].small,
+input[type="time"].small, input[type="search"].small,
+input[type="password"].small, input[type="number"].small,
+input[type="tel"].small, textarea.form-control.small {
+    padding: 1rem;
+}
+
+.input-group-btn {
+    margin-bottom: .4rem;
+}
+
+.input-group-btn:not(:first-child) > .btn:first-child {
+    margin-left: -.2rem;
+    border-radius: 0;
+    background-color: #000;
+    box-shadow: none;
+    top: .2rem;
+}
+
+.form {
+    padding-bottom: .5rem;
+    margin-right: 1rem;
+	margin-bottom: 1rem;
+}
+
+
+
+/*Skew background*/
+
+.skew-up-right {
+    position: relative;
+}
+
+.skew-up-right:before {
+    background-image:url("http://themestarz.net/html/scrape/assets/img/bg-skew-up-right.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top left;
+	height: 100%;   
+    width: 100%;	
+    left: 0;
+	top: 0;
+	content: "";
+    position: absolute;
+    pointer-events: none;    
+    z-index: 1;
+	
+}
+
+.skew-down-left {
+    position: relative;
+}
+
+.skew-down-left:after {
+	background-image: url("http://themestarz.net/html/scrape/assets/img/bg-skew-down-left.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+    height: 100%;
+	width: 100%;
+    left: 0;
+	bottom: 0;
+    content: "";    
+    position: absolute;
+    pointer-events: none;   
+    z-index: 1;
 }
 
