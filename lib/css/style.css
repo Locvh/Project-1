@@ -1321,4 +1321,10 @@ input[type="tel"].small, textarea.form-control.small {
     margin-right: 1rem;
 	margin-bottom: 1rem;
 }
-
+/*particles*/
+#particles-js{ 
+position:absolute; 
+width: 100%; 
+height: 100%; 
+background-color: #000; 
+ } 
