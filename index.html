@@ -9,20 +9,21 @@
  <link href="lib/css/ionicons.min.css" rel="stylesheet">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
- <link rel="stylesheet " href="lib/css/animate.min.css">
+ <link href="lib/css/animate.min.css" rel="stylesheet " type="text/css">
  <link rel="stylesheet " href="lib/css/morphext.css">
  <link rel="stylesheet" href="lib/css/owl.carousel.min.css">
  <link rel="stylesheet" href="lib/css/magnific-popup.css">
+  
+ <link rel="stylesheet" href="lib/css/style.css" type="text/css">
+ <link rel="stylesheet" href="lib/css/moving.css" type="text/css">
  <link href="img/icon.png" rel="icon">
- <link rel="stylesheet" href="lib/css/style.css">
-   
 </head>
 
 <body class="loading-page">
  <div class="page-wrapper" id="pageTop">
         <div class="loading-screen"></div>
 		<!--/ header /-->
-        <header id="hero">
+        <header id="hero" class="skew-down-left">
          <!--/ Navbar /-->
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
@@ -86,6 +87,7 @@
             <div class="hero__background ">               
                 <div class="background-wrapper" data-parallax="scroll" data-parallax-speed="3" data-background-color="#000" >
                     <div class="background opacity-40">
+                   
                         <div class="owl-carousel hero__slider parallax-element" data-owl-items="1" data-owl-autoplay="1" data-owl-dots="0" data-owl-nav="1" data-owl-loop="1" data-owl-fadeout="1">
                             <div class="slide img-into-bg">
                                 <img src="img/bg-01.jpg" >
@@ -96,7 +98,9 @@
                             <div class="slide img-into-bg">
                                 <img src="img/bg-03.jpg" >
                             </div>
+                             
                         </div>
+                        
                     </div>
                 </div>                
             </div>
@@ -170,12 +174,13 @@
                         <h2 class="reveal">Our Works</h2>
                     </div>                   
                 </div>
-
-                <div class="gallery">
-                    <div class="container-fluid px-0">
+                
+                <div class="gallery skew-up-right skew-down-left">
+             
+                    <div class="container-fluid px-0">                    
                         <div class="row no-gutters">
-                        <!--Section 1-->
-                            <div class="col-md-4">
+                          <!--Section 1-->
+                            <div class="col-md-4  ">
                                 <a href="https://www.youtube-nocookie.com/embed/KDugKBKZGuM" class="gallery__image video-popup">
                                     <div class="gallery__caption">
                                         <h3>
@@ -184,7 +189,7 @@
                                         <h5>Logo</h5>
                                         <h3 class="reveal">FPT University</h3>
                                     </div>
-                                    <div class="img-into-bg">
+                                    <div class="img-into-bg ">
                                         <img src="img/3.png" alt="">
                                     </div>
                                 </a>
@@ -249,9 +254,14 @@
                                     </div>
                                 </a>                               
                             </div>
-                        </div>                    
-                    </div>                 
+                             
+                        </div>     
+                                   
+                    </div> 
+                                     
                 </div>
+               
+                
               
 
                 <div class="my-2 text-center ">
@@ -294,7 +304,7 @@
             <!--/ end about us /-->
             
           <!--/ the team /-->
-            <section class="pb-4 block" id="theTeam">
+            <section class="pb-4 block skew-up-right skew-down-left" id="theTeam">
                 <div class="container">
                     <div class="block__wrapper">
                         <div class="block__title">
@@ -509,11 +519,118 @@
                     </div>
                 </div>
             </section>
-            <!--/ end block /-->
-
- 
-    
+            <!--/ end block /--> 
          </div>
+         <!--end contact -->
+         
+         <!--/ footer /-->
+          <footer id="footer" class="skew-up-right">
+            <div class="container">
+                <div class="block__wrapper">
+                    <div class="block__title" id="contact">
+                        <h2>Contact</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-12">
+                                    <h4>Our Address</h4>
+                                    <address>
+                                        1234 fpt<br>FPT University<br> VietNam
+                                    </address>
+                                </div>
+                                <div class="col-md-3 order-md-2">
+                                    <div class="py-4">
+                                        <figure>
+                                            <i class="fa fa-envelope"></i>
+                                            <a href="#">admin@gmail.com</a>
+                                        </figure>
+                                        <figure>
+                                            <i class="fab fa-facebook-f "></i>
+                                            <a href="#">scrape@facebook</a>
+                                        </figure>
+                                        <figure>
+                                            <i class="fab fa-twitter "></i>
+                                            <a href="#">scrape@twitter</a>
+                                        </figure>
+                                    </div>
+                                </div>                               
+                            </div>
+                        </div>
+                        
+                        <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12">
+                            <h4>Contact Form</h4>
+                                <div class="row">
+                                    <div class="col-md-9 order-md-1">
+                                        <div class="form">
+                                            <div>Your Name</div>
+                                            <input type="text" id="action" name="name" class="form-control"  placeholder="Your name" required type="text" title="Please enter name ..."></input>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 order-md-1">
+                                        <div class="form">
+                                            <div >Your Email</div>
+                                            <input type="email" id="action" name="email" class="form-control"  placeholder="Your email ...." required type="text" title="Please enter email ..."> </input>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form">
+                                            <div >Your Message</div>
+                                            <textarea id="action" name="message" class="form-control"  placeholder="Your message...." rows="9" cols="70" required type="text" title="Please write here ...."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form clearfix">
+                                    <button type="submit" class="btn pull-right btn-default" >Send a Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="hr-white ">
+
+            <div class="container">
+                <span>(C) Copyright 2020, design by Loc</span>
+            </div>
+
+            <div class="background-wrapper" data-background-color="#000">
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+                 <div class="particle"></div>
+            </div>
+
+        </footer>
  
         </div>
 
